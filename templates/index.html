@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forkify Website</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="head">
+        <input id="search" type="text" placeholder="   Search over 1,000,000 recepies...">
+        <button id="searchbut" onclick="getdata()"><i class="fa fa-search"></i> &nbsp <b>Submit</b></button>
+        <div id="likeditems" onmouseover="document.getElementById(this.id).style.visibility='visible'" onmouseout="document.getElementById(this.id).style.visibility='hidden'">Hi there</div>
+        <span id="likehead" onmouseover="document.getElementById('likeditems').style.visibility='visible'" onmouseout="document.getElementById('likeditems').style.visibility='hidden'"><i id="ilu" class="fa fa-heart"></i></span>
+        
+    </section>
+    <section id="a">
+        <div id="output">
+            <p>This is section A</p>
+        </div>
+
+    </section>
+    <section id="b">
+        <div id="titleimg">
+            <!-- <img id="chicken" src="../images/chicken3.jpg" alt="Chicken kebabs"> -->
+        </div>
+        <div id="rotate">
+            <h1 id="dishhead">
+                <span id="dishes">This is Forkify website</span>
+            </h1>
+        </div>
+
+        <div id="servenum">
+                <button id="likedish" class="0" onclick="likedish()"><i id ="heart" class="fa fa-heart-o"></i></button>
+        </div>
+        <div id="recipedetails">
+
+        </div>
+        <div id="cartbut">
+            <button id="addcart" onclick="addcart()"><i class="fa fa-shopping-cart"></i> &nbsp Add to Shopping
+                List</button>
+        </div>
+        <div id="foot">
+            <h2>How to cook it</h2>
+            <p>This recipe was carefully designed and tested by The Pioneer<br> Woman. Please check out directions at
+                their website.</p>
+            <a id="directions" target="_blank"><button id="siteurl">Directions &nbsp<i
+                        class="fa fa-play"></i></button></a>
+        </div>
+    </section>
+    <section id="c">
+        <div id="cartstuff"></div>
+        
+    </section>
+
+</body>
+
+</html>

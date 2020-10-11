@@ -1,0 +1,390 @@
+
+body{
+    background-image: linear-gradient(150deg, rgb(255, 208, 0),rgb(255, 145, 0));
+}
+#container{
+    width: 80%;
+    height: 1300px;
+    margin:5% 10%;
+    /* margin-bottom: 10%; */
+    position:absolute;
+    color: white;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+#head{
+    width:80%;
+    height:20%;
+    background-color:#F0F0F0	; /* #F5F5F5 */
+    text-align: center;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    margin:5% 10%;
+    margin-bottom: 0px;
+    position: absolute;
+}
+#head #likehead{
+    width:10%;
+    max-height: 100%;
+    
+    /* padding-top:5% ; */
+    margin-bottom:0px;
+    font-size: 270%;
+    text-align: center;
+    background-color:#f0f0f0;
+    color:rgb(255, 136, 0);
+    border-top-right-radius: 10px;
+    transition: 0.2s;
+    z-index: 9;
+    /* margin-right: 0px;
+    margin-left:20% ; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+
+#likehead i{
+    margin:30%;
+    margin-top: 40%;
+}
+ #head #likeditems{
+    width: 30%;
+    height: auto;
+    background-color: white;
+   /* margin-left: 10%;
+    margin-right: 0px;
+    margin-top: 7%;
+    margin-bottom: -10%; */
+    z-index: 10;
+    margin-left: 70%;
+    position: absolute;
+    bottom: auto;
+    right: 7%;
+    top: 60%;
+    visibility: hidden;
+    
+   /* display: none;  */
+}
+#likehead i:hover + #likeditems{
+    visibility: visible;
+    
+}
+
+input{
+    margin-top:3%;
+    margin-bottom: 3%;
+    margin-right: 60%;
+    margin-left: -20%;
+    width:30%;
+    height:50px;
+    z-index: 0;
+    border-radius: 25px;
+    border-style: none;
+    /* text-align: center; */
+    font-size: 100%;
+    position: absolute;
+}
+#searchbut{
+    /* margin:1% auto; */
+    color:white;
+    /* margin-top:2%; */
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left:2%;
+    width: 10%;
+    height:35%;
+    z-index: 1;
+    border-radius: 40px;
+    background-image: linear-gradient(140deg, rgb(255, 251, 0),rgb(255, 145, 0));
+    border-style: none;
+    font-size: 100%;
+    transition: width 0.2s, height 0.2s;
+    cursor: pointer;
+    position: absolute;;
+}
+/* #likehead{
+    align-self: right;
+} */
+#searchbut:hover{
+    width:10.5%;
+    height: 52px;
+}
+#a{
+    color:white ;
+    background-color: white;
+    width: 20%;
+    height:1500px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-bottom:5% ;
+    margin-right: 0px ;
+    /* position: relative; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+    
+}
+#b{
+    color:white ;
+    background-color: white;
+    width: 40%;
+    height:1500px;
+    float: left;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    margin-top: 15%;
+    margin-bottom:5%;
+    overflow: hidden;
+    position: relative;
+}
+#c{
+    color:white ;
+    background-color: white;
+    width: 21%;
+    height: 1500px;
+    margin-right:9%;
+    margin-left: 0px ;
+    margin-top:20% ;
+    float: left;
+    margin-bottom:5% ;
+    margin-top: 15%;
+    position: relative;
+    right: 0;
+    /* margin-right: ; */
+}
+/* #chicken{
+    max-width:700px;
+    height: 370px;
+    margin:0px  auto;
+    position: relative;
+    
+} */
+#dishhead{
+    width:90%;
+    height: 2%;
+    margin-top: -20%;
+    position: absolute;
+}
+#dishes{
+    width: 50%;
+    height: 20%;
+    /* padding-top: 2%; */
+    /* margin-top:-10%; */
+    font-size: 150%;
+    padding: 1%; 
+    background-image: linear-gradient(140deg, rgb(255, 217, 0),rgb(255, 145, 0));
+    font-family: sans-serif;
+    /* margin-bottom: -20%; */
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    
+}
+
+#rotate{
+    transform: rotate(-5deg);
+    text-align: center;
+    
+}   
+#foot{
+    max-width: 100%;
+    height: 20%;
+    color: grey;
+    background-color: #F0F0F0;
+    position: relative;;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.dishtable{
+    width: 100%;
+    height: 20%;
+    margin: 2%;
+    padding: 1%;
+    color: red;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 130%;
+
+}
+.dishtable:hover{
+    background-color: #F0F0F0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#servenum{
+    max-width: 100%;
+    height: 10%;
+    background-color:#F0F0F0;
+    margin:0px;
+    margin-top: -1%;
+    
+}
+#recipedetails{
+    max-width: 100%;
+    height: 40%;
+    margin-top:-3% ;
+    background-color: blue;
+    overflow-y: scroll;
+}
+.display{
+    margin-top: 2%;
+    max-width: 100%;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+.ingridient{
+    display: inline-block;
+    width: 48%;
+    background-color: violet;
+    font-size: 110%;
+    margin: 2%;
+    margin-top:0.5% ;
+}
+.ingridient i{
+    justify-content: left;
+}
+.recpimg{
+    width: 50px;
+    height: 45px ;
+    border-radius:50% ;
+    float: left;
+    margin-right: 2%;
+}
+#timing{
+    margin: 4% 2%;
+}
+#titleimg{
+    margin: 0px ;
+    max-width: 100%;
+    height: 25%;
+    background-image: url("../images/chicken3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#cartbut{
+    width: 100%;
+    height: 7%;
+    
+}
+#addcart{
+    background-image: linear-gradient(140deg, rgb(255, 217, 0),rgb(255, 102, 0));
+    width: 50%;
+    height: 30%;
+    margin-top: 5%;
+    font-size: 130%;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+    transition: width 0.2s, height 0.2s;
+}
+#addcart:hover{
+    width: 52%;
+    height: 32%;
+    cursor: pointer;
+}
+#siteurl{
+    background-image: linear-gradient(140deg, rgb(255, 217, 0),rgb(255, 102, 0));
+    width: 30%;
+    height: 15%;
+    margin-top: 2%;
+    font-size: 130%;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+    transition: width 0.2s, height 0.2s;
+}
+#siteurl:hover{
+    width: 32%;
+    height: 17%;
+    cursor: pointer;
+}
+#likedish{
+    width: 10%;
+    height: 35%;
+    margin-top: 7%;
+    margin-right: 10%;
+    font-size: 170%;
+    border-radius: 50%;
+    border-style: none;
+    float: right;
+    background-image: linear-gradient(140deg, rgb(255, 217, 0),rgb(255, 102, 0));
+    color: white;
+    transition: width 0.2s, height 0.2s;
+}
+#likedish:hover{
+    width: 11%;
+    height: 36%;
+    cursor: pointer;
+}
+
+.addeditem{
+    height: 10%;
+    display: block;
+    font-size: 120%;
+    margin: 3%;
+    color: grey;
+    transition: 0.2s;
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+/* .addeditem:hover{
+    background-color: #D3D3D3;
+} */
+.deletecart{
+    width: 20px;
+    height: 20px;
+    /* float: right; */
+    border-radius: 50%;
+    border-style: none;
+    align-content: right;
+    cursor: pointer;
+    background-image: linear-gradient(140deg, rgb(255, 217, 0),rgb(255, 102, 0));
+}
+.deletecart i{
+    color:white;
+    margin-right: 1%;
+}
+#cartstuff{
+    width: 95%;
+    height: 700px;
+    overflow-y: scroll;
+    margin-top: 5%;
+}
+
+.spanandbut{
+    display: flex;
+    transition: 0.2s;
+
+}
+.spanandbut:hover{
+    background-color: #D3D3D3;
+}
